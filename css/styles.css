@@ -1,0 +1,391 @@
+body {
+
+    font-family: 'Open Sans', sans-serif;
+
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    padding-bottom: 100px;
+}
+
+a {
+
+    text-decoration: none;
+}
+
+a:hover, a:hover *:not(img) {
+
+    filter: brightness(150%);
+}
+
+a img {
+
+    transition: 0.3s;
+}
+
+a:hover img {
+
+    transition: 0.3s;
+    transform: scale(1.05, 1.05) rotate(1.8deg);
+    filter: brightness(105%);
+}
+
+.topbar {
+
+    height: 103px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.topbar div {
+
+    height: 103px;
+    display: flex;
+    align-items: center;
+    width: 1145px;
+}
+
+.logo-desktop {
+
+    width: 96.5px;
+}
+
+.navlink {
+
+    letter-spacing: -0.8px;
+    margin: 0 0 0 25px;
+
+    font-weight: bold;
+}
+
+.navlink-g1 {
+    
+    color: #A80001;
+}
+
+.navlink-ge {
+    
+    color: #06AA48;
+}
+
+.navlink-gshow {
+    
+    color: #FF7F00;
+}
+
+.navlink-tech {
+    
+    color: #666666;
+}
+
+.navlink-videos {
+    
+    color: #0769DE;
+}
+
+.container {
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 1145px;
+    margin-top: 25px;
+}
+
+.news-container {
+
+    margin-bottom: 25px;
+}
+
+.general-news {
+
+    padding: 0 25px 0 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    max-width: 573px;
+    box-sizing: border-box;
+}
+
+.sports-news {
+    
+    padding: 0 25px;
+    border-left: 1px solid #e6e6e6;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    width: 261px;
+    box-sizing: border-box;
+}
+
+.famous-news {
+
+    padding: 0 0 0 25px;
+    border-left: 1px solid #e6e6e6;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    width: 261px;
+    box-sizing: border-box;
+}
+
+.general-news * {
+
+    color: #CD150B;
+}
+
+.sports-news * {
+
+    color: #06AA48;
+}
+
+.famous-news * {
+
+    color: #FF8203;
+}
+
+.general-primary-news {
+
+    padding: 0 0 24px 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.general-primary {
+
+    font-size: 52px;
+    line-height: 58px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    margin-bottom: 20px;
+}
+
+.general-subprimary {
+
+    font-size: 18px;
+    letter-spacing: -0.6px;
+}
+
+.general-secondary-news {
+
+    padding: 24px 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.general-tertiary-news {
+
+    padding: 24px 0 0;
+}
+
+.general-secondary-news, .general-tertiary-news {
+
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.general-secondary, .general-tertiary {
+
+    width: 171px;
+}
+
+.general-secondary-image {
+
+    width: 171px;
+    height: 96px;
+    border-radius: 4px;
+}
+
+.general-secondary-title, 
+.general-tertiary-title, 
+.sports-primary-title,
+.sports-secondary-title,
+.famous-primary-title, 
+.famous-secondary-title {
+
+    font-weight: bold;
+    font-size: 21.5px;
+    line-height: 25px;
+    letter-spacing: -0.045em;
+    padding: 10px 0;
+}
+
+.general-secondary-description, 
+.general-tertiary-description, 
+.sports-primary-description, 
+.sports-secondary-description,
+.famous-primary-description, 
+.famous-secondary-description {
+
+    font-size: 15.5px;
+    line-height: 19px;
+    letter-spacing: -0.048em;
+}
+
+.sports-primary, .sports-secondary {
+
+    width: 235px;
+}
+
+.sports-news .news:not(:first-child), .famous-news .news:not(:first-child) {
+
+    margin-top: 15px;
+}
+
+.sports-news .news:not(:last-child), .famous-news .news:not(:last-child) {
+
+    margin-bottom: 15px;
+}
+
+.famous-primary-description:first-of-type, .famous-secondary-description:last-of-type {
+    
+    margin-bottom: 5px;
+}
+
+.sports-primary-image, .famous-primary-image {
+
+    width: 235px;
+    height: 118px;
+    border-radius: 4px;
+}
+
+@media (max-width: 575px) {
+
+    .topbar div {
+        flex-flow: column nowrap;
+        width: 100%;
+    }
+
+    .topbar div .logo {
+        width: 100%;
+        height: 70px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .topbar div nav {
+
+        width: 100%;
+        height: 60px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-desktop {
+
+        display: none;
+    }
+
+    .logo-mobile {
+
+        display: inline-block;
+        width: 208px;
+    }
+
+    .container {
+
+        width: 95%;
+        flex-flow: column nowrap !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .general-news, .sports-news, .famous-news {
+
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 !important;
+    }
+
+    .sports-news, .famous-news {
+
+        width: 95vw;
+    }
+
+    .general-secondary-image, .sports-primary-image, .famous-primary-image {
+
+        width: 120px;
+        height: 67px;
+    }
+
+    .general-secondary-news, .general-tertiary-news {
+
+        flex-flow: column nowrap;
+    }
+
+    .general-secondary, .sports-primary, .famous-primary {
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        max-width: 95vw;
+        margin-top: 20px;
+    }
+
+    .general-secondary:not(:last-child) {
+
+        padding: 0 0 20px;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .general-secondary-title, .sports-primary-title, .famous-primary-title {
+
+        font-size: 18px;
+        margin-left: 15px;
+    }
+
+    .general-secondary figcaption, .sports-primary figcaption, .famous-primary figcaption {
+
+        width: 211px;
+    }
+
+    .general-secondary a:last-child {
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+
+    .general-secondary-description {
+
+        width: 300px;
+        margin-top: 15px;
+    }
+
+}
+
+@media (min-width: 576px) {
+
+    .logo-mobile {
+
+        display: none;
+    }
+}
+
+@media (max-width: 1145px) {
+
+    .logo-desktop {
+
+        margin-left: 20px;
+    }
+}
